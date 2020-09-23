@@ -4,4 +4,4 @@ gitopsParams:
     branch: master # GIT BRANCH PLACEHOLDER
     path: /cluster/platform # GIT PATH PLACEHOLDER
   images:
-    clusterComponents: docker.io/weaveworks/wkp-cluster-components:WKP-1229-integration-test-for-gitlab-workspace-6f4c2f87 # CLUSTER COMPONENTS IMAGE PLACEHOLDER
+    clusterComponents: weaveworks/wkp-cluster-components:WKP-1246-add-new-workspaces-page-ui-2a79ac1d # CLUSTER COMPONENTS IMAGE PLACEHOLDER
