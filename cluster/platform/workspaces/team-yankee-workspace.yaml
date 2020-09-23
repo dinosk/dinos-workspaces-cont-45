@@ -1,0 +1,23 @@
+apiVersion: wkp.weave.works/v1alpha1
+kind: Workspace
+metadata:
+  creationTimestamp: null
+  name: team-yankee-workspace
+  namespace: wkp-workspaces
+spec:
+  clusterScope:
+    namespaces:
+    - name: team-yankee-ns
+    networkPolicy: workspace-isolation
+    role: namespace-admin
+  gitProvider:
+    hostname: github.com
+    tokenRef:
+      name: github-token
+    type: github
+  gitRepository:
+    name: team-yankee-workspace
+    owner: wkp-example-org
+    teams:
+    - team-yankee
+  interval: 1m0s
